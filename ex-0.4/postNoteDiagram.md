@@ -1,3 +1,10 @@
+# NEW NOTE | 0.4
+
+## What
+* Diagram for adding new note feature on example app.
+---
+
+## Diagram
 ```mermaid
 sequenceDiagram
     participant browser
@@ -30,3 +37,10 @@ sequenceDiagram
     server-->>browser: [..., { "content": "My New Note", "date": "2026-11-27" }]
     deactivate server
 ```
+---
+
+## Notes
+* Notes page contains an HTML form with one input.
+    - Input (content): Notes to be saved. Can be empty.
+* When form submitted date created by using Date class.
+* Page reloads and render notes with new note.
